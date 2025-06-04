@@ -1,0 +1,118 @@
+.nav {
+  display: flex;
+  padding: 0 16px;
+  height: 56px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  &__hamburger-button {
+    background-color: $color-primary;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 13px;
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+  &__hamburger-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__icon {
+    height: 40px;
+  }
+}
+
+.searcher {
+  height: 40px;
+  display: flex;
+
+  align-items: center;
+}
+
+.searcher-form {
+  display: flex;
+
+  min-width: 640px;
+  margin-right: 15px;
+  overflow: hidden;
+
+  &__input {
+    outline: none;
+    color: white;
+    background-color: $color-primary;
+    padding-left: 17px;
+
+    font-size: 16px;
+    line-height: 36px;
+    width: 90%;
+    border: 2px solid #333333;
+    border-radius: 20px 0 0 20px;
+    &:focus {
+      border-color: rgb(67, 67, 255);
+    }
+  }
+  &__search-button {
+    border: #333333 2px solid;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    padding-left: 20px;
+    background-color: $color-secondary;
+    width: 10%;
+  }
+}
+
+.searcher__voice-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: $color-secondary;
+  border-radius: 20px;
+  img {
+    height: 17px;
+  }
+}
+.end-buttons {
+  display: flex;
+  align-items: center;
+
+  &__button {
+    color: white;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-left: 17px;
+    height: 40px;
+  }
+  &__create {
+    padding: 0 20px;
+    background-color: $color-secondary;
+  }
+  &__user {
+    width: 40px;
+    background-color: #7a1fa2;
+  }
+  &__notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    background-color: $color-primary;
+  }
+}
